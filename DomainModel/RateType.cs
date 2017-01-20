@@ -20,7 +20,8 @@ namespace DomainModel
     {
         public RateType()
         {
-        }
+
+        } 
 
         /// <summary>Gets or sets the Id. </summary>
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
