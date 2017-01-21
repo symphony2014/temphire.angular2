@@ -10,7 +10,7 @@ import { ResourceNameEditorComponent } from './resource-name-editor.component';
 
 @Component({
     moduleId: module.id,
-    templateUrl: './resource-detail.html',
+    templateUrl: '/app/resourcemgt/resource-detail.html',
     providers: [
         ResourceMgtUnitOfWork   // Inject a new instance for this component
     ]

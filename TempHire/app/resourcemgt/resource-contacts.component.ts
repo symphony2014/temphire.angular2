@@ -6,7 +6,7 @@ import { ResourceMgtUnitOfWork } from './resource-mgt-unit-of-work';
 @Component({
     selector: 'resource-contacts',
     moduleId: module.id,
-    templateUrl: './resource-contacts.html'
+    templateUrl: '/app/resourcemgt/resource-contacts.html'
 })
 export class ResourceContactsComponent implements OnInit {
 

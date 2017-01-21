@@ -2,7 +2,7 @@
 
 @Component({
     moduleId: module.id,
-    templateUrl: './home.html'
+    templateUrl: '/app/home.html'
 })
 export class HomeComponent {
     title = 'Home View';

@@ -5,7 +5,7 @@ import { AuthService, DialogService } from './core/services/common';
 
 @Component({
     moduleId: module.id,
-    templateUrl: './login.html'
+    templateUrl: '/app/login.html'
 })
 export class LoginComponent {
 

@@ -7,7 +7,7 @@ import { BusyService } from '../core/services/common';
 
 @Component({
     moduleId: module.id,
-    templateUrl: './resource-mgt.html'
+    templateUrl: '/app/resourcemgt/resource-mgt.html'
 })
 export class ResourceMgtComponent implements OnInit, OnDestroy {
 

@@ -40,7 +40,7 @@ export class DialogService {
 @Component({
     selector: 'message-box',
     moduleId: module.id,
-    templateUrl: './message-box.html'
+    templateUrl: '/app/core/services/message-box.html'
 })
 export class MessageBoxComponent {
 

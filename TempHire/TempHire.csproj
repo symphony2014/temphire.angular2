@@ -25,7 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TypeScriptToolsVersion>2.0</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.1</TypeScriptToolsVersion>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -141,15 +141,65 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.component.js" />
     <Content Include="app\app.html" />
+    <Content Include="app\app.module.js" />
+    <Content Include="app\app.routes.js" />
+    <Content Include="app\core\core.module.js" />
+    <Content Include="app\core\entities\address - ╕▒▒╛.js" />
+    <Content Include="app\core\entities\address-type.js" />
+    <Content Include="app\core\entities\address.js" />
+    <Content Include="app\core\entities\entity-base.js" />
+    <Content Include="app\core\entities\entity-model.js" />
+    <Content Include="app\core\entities\entity-type-annotation.js" />
+    <Content Include="app\core\entities\metadata.js" />
+    <Content Include="app\core\entities\phone-number-type.js" />
+    <Content Include="app\core\entities\phone-number.js" />
+    <Content Include="app\core\entities\rate-type.js" />
+    <Content Include="app\core\entities\rate.js" />
+    <Content Include="app\core\entities\registration-helper.js" />
+    <Content Include="app\core\entities\skill.js" />
+    <Content Include="app\core\entities\staffing-resource.js" />
+    <Content Include="app\core\entities\state.js" />
+    <Content Include="app\core\entities\work-experience-item.js" />
+    <Content Include="app\core\services\auth.service.js" />
+    <Content Include="app\core\services\busy.service.js" />
+    <Content Include="app\core\services\common.js" />
+    <Content Include="app\core\services\custom-exception-handler.js" />
+    <Content Include="app\core\services\dialog.service.js" />
+    <Content Include="app\core\services\entity-manager-provider.js" />
+    <Content Include="app\core\services\error-handler.js" />
+    <Content Include="app\core\services\guards.js" />
     <Content Include="app\core\services\message-box.html" />
+    <Content Include="app\home.component.js" />
     <Content Include="app\home.html" />
+    <Content Include="app\login.component.js" />
     <Content Include="app\login.html" />
+    <Content Include="app\main.js" />
+    <Content Include="app\nav-bar.component.js" />
     <Content Include="app\nav-bar.html" />
+    <Content Include="app\resourcemgt\resource-contacts.component.js" />
     <Content Include="app\resourcemgt\resource-contacts.html" />
+    <Content Include="app\resourcemgt\resource-detail.component.js" />
     <Content Include="app\resourcemgt\resource-detail.html" />
+    <Content Include="app\resourcemgt\resource-mgt-unit-of-work.js" />
+    <Content Include="app\resourcemgt\resource-mgt.component.js" />
     <Content Include="app\resourcemgt\resource-mgt.html" />
+    <Content Include="app\resourcemgt\resource-mgt.module.js" />
+    <Content Include="app\resourcemgt\resource-mgt.routes.js" />
+    <Content Include="app\resourcemgt\resource-name-editor.component.js" />
     <Content Include="app\resourcemgt\resource-name-editor.html" />
+    <Content Include="app\shared\controls\modal-dialog.js" />
+    <Content Include="app\shared\controls\tab-container.component.js" />
+    <Content Include="app\shared\controls\tab-pane.directive.js" />
+    <Content Include="app\shared\directives\common.js" />
+    <Content Include="app\shared\directives\new-line.directive.js" />
+    <Content Include="app\shared\directives\scroll-to-top.directive.js" />
+    <Content Include="app\shared\services\common.js" />
+    <Content Include="app\shared\services\provide-parent.js" />
+    <Content Include="app\shared\services\repository.js" />
+    <Content Include="app\shared\services\unit-of-work.js" />
+    <Content Include="app\shared\shared.module.js" />
     <Content Include="App_Data\ReadMe.txt" />
     <Content Include="Content\app.css" />
     <Content Include="Content\font-awesome-4.6.3\css\font-awesome.css" />
@@ -194,6 +244,56 @@
     <Content Include="Content\font-awesome-4.6.3\scss\_screen-reader.scss" />
     <Content Include="Content\font-awesome-4.6.3\scss\_stacked.scss" />
     <Content Include="Content\font-awesome-4.6.3\scss\_variables.scss" />
+    <Content Include="app\app.component.js.map" />
+    <Content Include="app\app.module.js.map" />
+    <Content Include="app\app.routes.js.map" />
+    <Content Include="app\core\core.module.js.map" />
+    <Content Include="app\core\entities\address - ╕▒▒╛.js.map" />
+    <Content Include="app\core\entities\address-type.js.map" />
+    <Content Include="app\core\entities\address.js.map" />
+    <Content Include="app\core\entities\entity-base.js.map" />
+    <Content Include="app\core\entities\entity-model.js.map" />
+    <Content Include="app\core\entities\entity-type-annotation.js.map" />
+    <Content Include="app\core\entities\metadata.js.map" />
+    <Content Include="app\core\entities\phone-number-type.js.map" />
+    <Content Include="app\core\entities\phone-number.js.map" />
+    <Content Include="app\core\entities\rate-type.js.map" />
+    <Content Include="app\core\entities\rate.js.map" />
+    <Content Include="app\core\entities\registration-helper.js.map" />
+    <Content Include="app\core\entities\skill.js.map" />
+    <Content Include="app\core\entities\staffing-resource.js.map" />
+    <Content Include="app\core\entities\state.js.map" />
+    <Content Include="app\core\entities\work-experience-item.js.map" />
+    <Content Include="app\core\services\auth.service.js.map" />
+    <Content Include="app\core\services\busy.service.js.map" />
+    <Content Include="app\core\services\common.js.map" />
+    <Content Include="app\core\services\custom-exception-handler.js.map" />
+    <Content Include="app\core\services\dialog.service.js.map" />
+    <Content Include="app\core\services\entity-manager-provider.js.map" />
+    <Content Include="app\core\services\error-handler.js.map" />
+    <Content Include="app\core\services\guards.js.map" />
+    <Content Include="app\home.component.js.map" />
+    <Content Include="app\login.component.js.map" />
+    <Content Include="app\main.js.map" />
+    <Content Include="app\nav-bar.component.js.map" />
+    <Content Include="app\resourcemgt\resource-contacts.component.js.map" />
+    <Content Include="app\resourcemgt\resource-detail.component.js.map" />
+    <Content Include="app\resourcemgt\resource-mgt-unit-of-work.js.map" />
+    <Content Include="app\resourcemgt\resource-mgt.component.js.map" />
+    <Content Include="app\resourcemgt\resource-mgt.module.js.map" />
+    <Content Include="app\resourcemgt\resource-mgt.routes.js.map" />
+    <Content Include="app\resourcemgt\resource-name-editor.component.js.map" />
+    <Content Include="app\shared\controls\modal-dialog.js.map" />
+    <Content Include="app\shared\controls\tab-container.component.js.map" />
+    <Content Include="app\shared\controls\tab-pane.directive.js.map" />
+    <Content Include="app\shared\directives\common.js.map" />
+    <Content Include="app\shared\directives\new-line.directive.js.map" />
+    <Content Include="app\shared\directives\scroll-to-top.directive.js.map" />
+    <Content Include="app\shared\services\common.js.map" />
+    <Content Include="app\shared\services\provide-parent.js.map" />
+    <Content Include="app\shared\services\repository.js.map" />
+    <Content Include="app\shared\services\unit-of-work.js.map" />
+    <Content Include="app\shared\shared.module.js.map" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
@@ -245,6 +345,7 @@
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routes.ts" />
     <TypeScriptCompile Include="app\core\core.module.ts" />
+    <TypeScriptCompile Include="app\core\entities\address - ╕▒▒╛.ts" />
     <TypeScriptCompile Include="app\core\entities\address-type.ts" />
     <TypeScriptCompile Include="app\core\entities\address.ts" />
     <TypeScriptCompile Include="app\core\entities\entity-base.ts" />
